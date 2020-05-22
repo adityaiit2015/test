@@ -9,19 +9,19 @@ pipeline {
 		stage('Build'){
 			steps{
 				sh 'python heelo.py'
-				sh 'python proj1.py test1'
+				sh 'python3 proj1.py test1'
 			}
 		}
 		stage('Test'){
 			steps{
 				sh 'python heelo.py'
-				sh 'python proj1.py test2'
+				sh 'python3 proj1.py test2'
 			}
 		}
 		stage('Deploy'){
 			steps{
 				sh 'python heelo.py'
-				sh 'python proj1.py test3'
+				sh 'python3 proj1.py test3'
 			}
 		}
 	}
