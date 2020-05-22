@@ -9,7 +9,7 @@ pipeline {
 		stage('Build'){
 			steps{
 				sh 'python heelo.py'
-				sh 'python3 proj1.py test1'
+				sh 'python3 proj1.py 40'
 			}
 		}
 		stage('Test'){
