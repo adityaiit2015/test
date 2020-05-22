@@ -1,0 +1,29 @@
+pipeline {
+	agent any 
+	environment {
+		test1 ='10'
+		test2 ='30'
+		test3 ='40'
+	}
+	stages {
+		stage('Build'){
+			steps{
+				sh 'python heelo.py'
+				sh 'python proj1.py test1'
+			}
+		}
+		stage('Test'){
+			steps{
+				sh 'python heelo.py'
+				sh 'python proj1.py test2'
+			}
+		}
+		stage('Deploy'){
+			steps{
+				sh 'python heelo.py'
+				sh 'python proj1.py test3'
+			}
+		}
+	}
+}
+	
