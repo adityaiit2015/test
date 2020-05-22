@@ -21,7 +21,7 @@ pipeline {
 		stage('Deploy'){
 			steps{
 				sh 'python heelo.py'
-				sh 'python proj2.py 40 80'
+				sh 'python proj2.py test1 test2'
 			}
 		}
 	}
