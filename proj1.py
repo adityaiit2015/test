@@ -1,3 +1,2 @@
-n = int(input())  
-for i in range(n) :
+for i in range(10) :
     print(i*6)
